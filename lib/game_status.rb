@@ -31,10 +31,17 @@ def won?(board)
       elsif position_1 === "O" && position_2 == "O" && position_3 == "O"
         return winner_array
       
+<<<<<<< HEAD
     
     end
   end
   false
+=======
+    else
+      false
+    end
+  end
+>>>>>>> 1c616fe55cf7596d24dbf7a28b4c45231cde624a
 end
 
 def full?(board)
@@ -49,7 +56,13 @@ end
 
 
 def over?(board)
+<<<<<<< HEAD
   won?(board) || full?(board)
+=======
+ if won?(board) || full?(board)
+else
+  false
+>>>>>>> 1c616fe55cf7596d24dbf7a28b4c45231cde624a
 end
 
 def winner(board)
